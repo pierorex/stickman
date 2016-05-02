@@ -240,6 +240,7 @@ void processKeys(unsigned char key, int x, int y) {
 	if (key == 27) exit(0);
 	else if (key <= '6' && key >= '1') limb = key;
 	else switch(key) {
+		case 'A':
 		case 'a':	
 			switch(limb) {
 				case '6': upper_torso_angle += magnitude; break;
@@ -250,6 +251,7 @@ void processKeys(unsigned char key, int x, int y) {
 				case '1': l_hip_angle += magnitude;		  break;
 			}
 		break;
+		case 'Z':
 		case 'z':
 			switch(limb) {
 				case '6': upper_torso_angle -= magnitude; break;
@@ -260,6 +262,7 @@ void processKeys(unsigned char key, int x, int y) {
 				case '1': l_hip_angle -= magnitude;		  break;
 			}
 		break;
+		case 'S':
 		case 's':
 			switch(limb) {
 				case '4': r_elbow_angle += magnitude; break;
@@ -268,6 +271,7 @@ void processKeys(unsigned char key, int x, int y) {
 				case '1': l_knee_angle += magnitude;  break;
 			}
 		break;
+		case 'X':
 		case 'x':
 			switch(limb) {
 				case '4': r_elbow_angle -= magnitude; break;
@@ -276,6 +280,7 @@ void processKeys(unsigned char key, int x, int y) {
 				case '1': l_knee_angle -= magnitude;  break;
 			}
 		break;
+		case 'D':
 		case 'd':
 			switch(limb) {
 				case '4': r_wrist_angle += magnitude; break;
@@ -284,6 +289,7 @@ void processKeys(unsigned char key, int x, int y) {
 				case '1': l_ankle_angle += magnitude; break;
 			}
 		break;
+		case 'C':
 		case 'c':
 			switch(limb) {
 				case '4': r_wrist_angle -= magnitude; break;
